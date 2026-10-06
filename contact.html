@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Please fill out the form below to contact us:</p>
+
+        <form action="#" method="post" class="contact-form">
+            <!-- Text Input -->
+            <div class="form-group">
+                <label for="fullname">Full Name (Text):</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email Address (Email):</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Number Input -->
+            <div class="form-group">
+                <label for="age">Age (Number):</label>
+                <input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your age">
+            </div>
+
+            <!-- Date Input -->
+            <div class="form-group">
+                <label for="birthdate">Date of Birth (Date):</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <label>Preferred Contact Method (Radio buttons):</label><br>
+                <input type="radio" id="contact-email" name="contact_method" value="email" checked>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <label>Topics of Interest (Checkboxes):</label><br>
+                <input type="checkbox" id="web" name="interests" value="web">
+                <label for="web">Web Development</label>
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">Design</label>
+            </div>
+
+            <!-- Dropdown Menu (Select) -->
+            <div class="form-group">
+                <label for="country">Country (Dropdown menu):</label>
+                <select id="country" name="country">
+                    <option value="egypt">Egypt</option>
+                    <option value="saudi">Saudi Arabia</option>
+                    <option value="uae">UAE</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Large Text Box (Textarea) -->
+            <div class="form-group">
+                <label for="message">Your Message (Textarea):</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+</body>
+</html>
